@@ -1,0 +1,363 @@
+@charset "UTF-8";
+/* Reseteo universal */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Primera entrega CSS */
+li {
+  color: black;
+  list-style-position: inside;
+}
+
+a {
+  font-family: 'Indie Flower', cursive;
+  font-weight: bold;
+  text-decoration: none;
+  color: black;
+}
+
+.viñeta {
+  list-style: circle inside none;
+}
+
+h2 {
+  font-family: 'Indie Flower', cursive;
+  margin: 20px;
+}
+
+span {
+  font-family: 'Indie Flower', cursive;
+  font-weight: bold;
+}
+
+p {
+  font-family: 'Roboto', sans-serif;
+}
+
+/* Flexbox - Contactos y Redes*/
+.contactos__seccion {
+  display: flex;
+  justify-content: space-between;
+}
+
+.contactos__seccion_form {
+  display: flex;
+  background-color: grey;
+  width: 40%;
+  margin: 10px;
+  padding: 1rem;
+  border: black 2px;
+}
+
+.contactos__seccion_mapa {
+  display: flex;
+  background-color: #d35f0c;
+  flex-direction: column;
+  justify-content: flex-end;
+  width: 60%;
+  margin: 10px;
+  padding: 1rem;
+  border: black 2px;
+}
+
+.contacto__hijo_numero {
+  align-self: flex-start;
+}
+
+.contacto__hijo_mail {
+  align-self: flex-end;
+}
+
+.contacto__hijo_direccion, .contacto__hijo_mapa {
+  align-self: center;
+}
+
+/* Animaciones, Transformaciones y Transiciones*/
+/* Animación - en el Logotipo */
+.logotipo {
+  width: 200px;
+  height: 25px;
+  animation-name: logotipo;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in;
+  animation-duration: 4s;
+  animation-delay: 3s;
+}
+
+@keyframes logotipo {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+.icono {
+  width: 40px;
+  height: 40px;
+}
+
+#icono {
+  width: 80px;
+  height: 80px;
+}
+
+.imgservicios {
+  width: 300px;
+  height: 200px;
+}
+
+/* Carousel - Trabajos en Obra */
+.carousel-item img {
+  height: 400px;
+  object-fit: cover;
+}
+
+/* BEM */
+.menu {
+  margin: 5px;
+  display: flex;
+  justify-content: flex-start;
+  background-color: orange;
+  border-top-right-radius: 400px 200px;
+  height: auto;
+}
+
+.menu__logotipo {
+  width: 200px;
+  height: 40px;
+}
+
+.menu__lista {
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 1200px;
+}
+
+.menu__item {
+  border: black;
+  text-align: center;
+  margin: 5px;
+  padding: 5px;
+  width: 150px;
+}
+
+.footer {
+  padding: 5px;
+  margin: 5px;
+  border-top-right-radius: 400px 200px;
+  display: grid;
+  grid-template-columns: 20% auto 30% 30%;
+  grid-template-rows: 50px auto;
+  grid-template-areas: "medios mapa ubicacion whatsapp" " medios mapa arroba facebook";
+}
+
+.footer__medios {
+  grid-area: medios;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.footer__mapa {
+  grid-area: mapa;
+}
+
+.footer__ubicacion {
+  grid-area: ubicacion;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.footer__whatsapp {
+  grid-area: whatsapp;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.footer__mail {
+  grid-area: arroba;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.footer__redes {
+  grid-area: facebook;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.productos {
+  display: flex;
+  justify-content: space-around;
+  border: black 3px solid;
+  margin: 10px;
+  padding: 5px;
+  gap: 5px;
+}
+
+.productos__viñeta {
+  border: black 1px solid;
+  padding: 5px;
+}
+
+.servicios {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  border: black 3px solid;
+  margin: 10px;
+  padding: 5px;
+  gap: 5px;
+}
+
+.servicios__viñeta {
+  border: black 1px solid;
+  padding: 5px;
+}
+
+/* SASS */
+h2 {
+  background-color: none;
+}
+
+.estilo_quienessomos, .DeDondeVenimos, .HaciaDondeVamos {
+  width: 500px;
+  height: 300px;
+  padding: 40px;
+  display: inline-block;
+}
+
+.DeDondeVenimos {
+  background-color: #cccccc;
+  border: darkblue 5px solid;
+}
+
+.HaciaDondeVamos {
+  margin: 20px;
+  text-align: right;
+  background-color: cyan;
+  border: black 5px dashed;
+}
+
+.tabla__tamaño {
+  width: 30%;
+}
+
+.tabla__precios {
+  display: flex;
+  justify-content: center;
+}
+
+/* DEJAR SIEMPRE AL FINAL */
+/* Mobile First - Servicios*/
+/* Mobile First - Servicios - Telefonos pequeños en vertical*/
+@media (max-width: 320px) {
+  .grid__servicios {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+  }
+  .grid__servicios section {
+    border: none;
+  }
+  .footer__medios {
+    display: none;
+  }
+  .footer__mapa {
+    display: none;
+  }
+  .footer__ubicacion {
+    display: none;
+  }
+  .footer {
+    border-top-right-radius: none;
+    display: grid;
+    grid-template-columns: 50% auto;
+    grid-template-rows: 50px auto;
+    grid-template-areas: "whatsapp none" "arroba facebook";
+  }
+  .ocultar {
+    display: none;
+  }
+}
+
+/* Mobile First - Servicios - Teléfonos pequeños en horizontal*/
+@media (max-width: 480px) {
+  .grid__servicios {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    border: black 2px solid;
+    gap: 5px;
+  }
+  .grid__servicios section {
+    border: black 1px;
+  }
+  .footer__medios {
+    display: none;
+  }
+  .footer__mapa {
+    display: none;
+  }
+  .footer__ubicacion {
+    display: none;
+  }
+  .footer {
+    border-top-right-radius: none;
+    display: grid;
+    grid-template-columns: 50% auto;
+    grid-template-rows: 50px auto;
+    grid-template-areas: "whatsapp none" "arroba facebook";
+  }
+  .ocultar {
+    display: none;
+  }
+}
+
+/* Mobile First - Tablets*/
+@media (max-width: 768px) {
+  .grid__servicios {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    border: black 1px solid;
+    margin: 10px;
+    padding: 5px;
+    gap: 5px;
+  }
+  .grid__servicios section {
+    border: black 1px solid;
+    padding: 5px;
+  }
+  .footer__medios {
+    display: none;
+  }
+  .footer__mapa {
+    display: none;
+  }
+  .footer__ubicacion {
+    display: none;
+  }
+  .footer {
+    border-top-right-radius: none;
+    display: grid;
+    grid-template-columns: 50% auto;
+    grid-template-rows: 50px auto;
+    grid-template-areas: "whatsapp none" "arroba facebook";
+  }
+  .ocultar {
+    display: none;
+  }
+}

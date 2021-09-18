@@ -165,8 +165,7 @@ p {
   display: grid;
   grid-template-columns: 20% auto 30% 30%;
   grid-template-rows: 50px auto;
-  grid-template-areas: "medios mapa ubicacion whatsapp"
- " medios mapa arroba facebook";
+  grid-template-areas: "medios mapa ubicacion whatsapp" " medios mapa arroba facebook";
 }
 
 .footer__medios {
@@ -275,8 +274,8 @@ h2 {
 /* Mobile First - Servicios - Telefonos pequeños en vertical*/
 @media (max-width: 320px) {
   .inicio__imagen {
-    width: 250px;
-    height: 250px;
+    width: 280px;
+    height: 280px;
   }
   .grid__servicios {
     display: grid;
@@ -300,8 +299,7 @@ h2 {
     display: grid;
     grid-template-columns: 50% auto;
     grid-template-rows: 50px auto;
-    grid-template-areas: "whatsapp none"
- "arroba facebook";
+    grid-template-areas: "whatsapp none" "arroba facebook";
   }
   .ocultar {
     display: none;
@@ -311,8 +309,8 @@ h2 {
 /* Mobile First - Servicios - Teléfonos pequeños en horizontal*/
 @media (max-width: 480px) {
   .inicio__imagen {
-    width: 250px;
-    height: 250px;
+    width: 280px;
+    height: 280px;
   }
   .grid__servicios {
     display: grid;
@@ -338,8 +336,7 @@ h2 {
     display: grid;
     grid-template-columns: 50% auto;
     grid-template-rows: 50px auto;
-    grid-template-areas: "whatsapp none"
- "arroba facebook";
+    grid-template-areas: "whatsapp none" "arroba facebook";
   }
   .ocultar {
     display: none;
@@ -375,8 +372,7 @@ h2 {
     display: grid;
     grid-template-columns: 50% auto;
     grid-template-rows: 50px auto;
-    grid-template-areas: "whatsapp none"
- "arroba facebook";
+    grid-template-areas: "whatsapp none" "arroba facebook";
   }
   .ocultar {
     display: none;

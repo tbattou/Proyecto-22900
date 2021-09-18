@@ -254,6 +254,10 @@ h2 {
 /* Mobile First - Servicios*/
     /* Mobile First - Servicios - Telefonos pequeños en vertical*/
     @media (max-width: 320px) { 
+        .inicio__imagen { 
+            width: 250px;
+            height: 250px;}
+
         .grid__servicios {
             display: grid;
             grid-template-columns: repeat(1, 1fr);
@@ -288,6 +292,9 @@ h2 {
     
     /* Mobile First - Servicios - Teléfonos pequeños en horizontal*/
     @media (max-width: 480px) { 
+        .inicio__imagen { 
+            width: 250px;
+            height: 250px;}
         .grid__servicios {
             display: grid;
             grid-template-columns: repeat(1, 1fr);

@@ -1,5 +1,3 @@
-@import "_variables";
-
 /* Reseteo universal */
 * { 
     margin:0;
@@ -7,12 +5,18 @@
     box-sizing: border-box;}
 
 /* Primera entrega CSS */
+.inicio__botones { 
+    background-color: orange;
+    font-weight: bold;
+    border: none;
+    }
+
 li {
     color: black;
     list-style-position: inside;} 
 
 a {
-    font-family: 'Indie Flower', cursive;
+    font-family: 'Roboto', cursive;
     font-weight: bold;
     text-decoration: none;
     color: black;}
@@ -21,64 +25,26 @@ a {
     list-style:circle inside none}
 
 h2 {
-    font-family: 'Indie Flower', cursive;
+    font-family: 'Roboto', cursive;
     margin: 20px;
     font-weight: bold;}
 
 .titulo {
     font-family: 'Indie Flower', cursive;
     font-weight: bold;
-    margin-top: 80px;
-    margin-bottom: 20px;
-    margin-left: 20px;}
-
-span {
-    font-family: 'Indie Flower', cursive;
-    font-weight: bold;}
+}
 
 p {
-    font-family: 'Roboto', sans-serif;}
-
-/* Flexbox - Contactos y Redes*/
-
-.contactos__seccion { 
-    display: flex;
-    justify-content: space-between;}
-
-.contactos__seccion_form { 
-    display: flex;
-    background-color: grey;
-    width: 40%;
-    margin: 10px;
-    padding: 1rem;
-    border: black 2px;}
-
-.contactos__seccion_mapa { 
-    display: flex;
-    background-color: rgb(211, 95, 12);
-    flex-direction: column;
-    justify-content: flex-end;
-    width: 60%;
-    margin: 10px;
-    padding: 1rem;
-    border: black 2px;}
-
-.contacto__hijo_numero { 
-    align-self: flex-start;}
-
-.contacto__hijo_mail { 
-    align-self: flex-end;}
-
-.contacto__hijo_direccion { 
-    align-self: center;}
-
+    font-family: 'Indie Flower', sans-serif;
+    font-weight: bold;}
 
 /* Animaciones, Transformaciones y Transiciones*/
        
         /* Animación - en el Logotipo */
         .logotipo { 
             width: 200px;
-            height: 25px;
+            height: 30px;
+            object-fit: contain;
             animation-name: logotipo;
             animation-iteration-count: 1;
             animation-timing-function: ease-in;
@@ -148,6 +114,8 @@ p {
                         " medios mapa arroba facebook";}
     
 .footer__medios { 
+    font-family: 'Roboto', cursive;
+    font-weight: bold;
     grid-area: medios;
     display: flex;
     justify-content: space-evenly;
@@ -157,24 +125,32 @@ p {
     grid-area: mapa;}
 
 .footer__ubicacion { 
+    font-family: 'Roboto', cursive;
+    font-weight: bold;
     grid-area: ubicacion;
     display: flex;
     justify-content: flex-start;
     align-items: center;}
 
 .footer__whatsapp { 
+    font-family: 'Roboto', cursive;
+    font-weight: bold;
     grid-area: whatsapp;
     display: flex;
     justify-content: flex-start;
     align-items: center;}
 
 .footer__mail { 
+    font-family: 'Roboto', cursive;
+    font-weight: bold;
     grid-area: arroba;
     display: flex;
     justify-content: flex-start;
     align-items: center;}
 
 .footer__redes { 
+    font-family: 'Roboto', cursive;
+    font-weight: bold;
     grid-area: facebook;
     display: flex;
     justify-content: space-evenly;
@@ -205,6 +181,11 @@ p {
     border: black 1px solid;
     padding: 5px;}
 
+.contactos__seccion_form {
+    background-color: grey;
+    border: black 1px solid;
+}
+
 /* SASS */
 
 $modo-oscuro: false;
@@ -218,27 +199,12 @@ h2 {
     }
 }
 
-.contacto__hijo_mapa { 
-    @extend .contacto__hijo_direccion;}
-
 .estilo_quienessomos { 
     width: 500px;
     height: 300px;
     padding: 40px;
     display: inline-block;
 }
-
-.DeDondeVenimos { 
-    background-color: #cccccc;
-    @extend .estilo_quienessomos;
-    border: darkblue 5px solid;}
-    
-.HaciaDondeVamos { 
-    margin: 20px;
-    text-align: right;
-    background-color: cyan;
-    @extend .estilo_quienessomos;
-    border: black 5px dashed;}
 
 .tabla__tamaño { 
         width: 30%;}
@@ -284,7 +250,7 @@ h2 {
                                 "arroba facebook";}
            
         .ocultar { 
-            display: none;}                            
+            display: none;} 
     
         }
         
@@ -295,6 +261,7 @@ h2 {
         .inicio__imagen { 
             width: 280px;
             height: 280px;}
+
         .grid__servicios {
             display: grid;
             grid-template-columns: repeat(1, 1fr);
@@ -358,6 +325,5 @@ h2 {
                                 "arroba facebook";}
 
         .ocultar { 
-            display: none;}  
-
-        }
+            display: none;} 
+    }

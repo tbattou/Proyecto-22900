@@ -7,13 +7,19 @@
 }
 
 /* Primera entrega CSS */
+.inicio__botones {
+  background-color: orange;
+  font-weight: bold;
+  border: none;
+}
+
 li {
   color: black;
   list-style-position: inside;
 }
 
 a {
-  font-family: 'Indie Flower', cursive;
+  font-family: 'Roboto', cursive;
   font-weight: bold;
   text-decoration: none;
   color: black;
@@ -24,7 +30,7 @@ a {
 }
 
 h2 {
-  font-family: 'Indie Flower', cursive;
+  font-family: 'Roboto', cursive;
   margin: 20px;
   font-weight: bold;
 }
@@ -32,63 +38,19 @@ h2 {
 .titulo {
   font-family: 'Indie Flower', cursive;
   font-weight: bold;
-  margin-top: 80px;
-  margin-bottom: 20px;
-  margin-left: 20px;
-}
-
-span {
-  font-family: 'Indie Flower', cursive;
-  font-weight: bold;
 }
 
 p {
-  font-family: 'Roboto', sans-serif;
-}
-
-/* Flexbox - Contactos y Redes*/
-.contactos__seccion {
-  display: flex;
-  justify-content: space-between;
-}
-
-.contactos__seccion_form {
-  display: flex;
-  background-color: grey;
-  width: 40%;
-  margin: 10px;
-  padding: 1rem;
-  border: black 2px;
-}
-
-.contactos__seccion_mapa {
-  display: flex;
-  background-color: #d35f0c;
-  flex-direction: column;
-  justify-content: flex-end;
-  width: 60%;
-  margin: 10px;
-  padding: 1rem;
-  border: black 2px;
-}
-
-.contacto__hijo_numero {
-  align-self: flex-start;
-}
-
-.contacto__hijo_mail {
-  align-self: flex-end;
-}
-
-.contacto__hijo_direccion, .contacto__hijo_mapa {
-  align-self: center;
+  font-family: 'Indie Flower', sans-serif;
+  font-weight: bold;
 }
 
 /* Animaciones, Transformaciones y Transiciones*/
 /* Animación - en el Logotipo */
 .logotipo {
   width: 200px;
-  height: 25px;
+  height: 30px;
+  object-fit: contain;
   animation-name: logotipo;
   animation-iteration-count: 1;
   animation-timing-function: ease-in;
@@ -169,6 +131,8 @@ p {
 }
 
 .footer__medios {
+  font-family: 'Roboto', cursive;
+  font-weight: bold;
   grid-area: medios;
   display: flex;
   justify-content: space-evenly;
@@ -180,6 +144,8 @@ p {
 }
 
 .footer__ubicacion {
+  font-family: 'Roboto', cursive;
+  font-weight: bold;
   grid-area: ubicacion;
   display: flex;
   justify-content: flex-start;
@@ -187,6 +153,8 @@ p {
 }
 
 .footer__whatsapp {
+  font-family: 'Roboto', cursive;
+  font-weight: bold;
   grid-area: whatsapp;
   display: flex;
   justify-content: flex-start;
@@ -194,6 +162,8 @@ p {
 }
 
 .footer__mail {
+  font-family: 'Roboto', cursive;
+  font-weight: bold;
   grid-area: arroba;
   display: flex;
   justify-content: flex-start;
@@ -201,6 +171,8 @@ p {
 }
 
 .footer__redes {
+  font-family: 'Roboto', cursive;
+  font-weight: bold;
   grid-area: facebook;
   display: flex;
   justify-content: space-evenly;
@@ -236,28 +208,21 @@ p {
   padding: 5px;
 }
 
+.contactos__seccion_form {
+  background-color: grey;
+  border: black 1px solid;
+}
+
 /* SASS */
 h2 {
   background-color: none;
 }
 
-.estilo_quienessomos, .DeDondeVenimos, .HaciaDondeVamos {
+.estilo_quienessomos {
   width: 500px;
   height: 300px;
   padding: 40px;
   display: inline-block;
-}
-
-.DeDondeVenimos {
-  background-color: #cccccc;
-  border: darkblue 5px solid;
-}
-
-.HaciaDondeVamos {
-  margin: 20px;
-  text-align: right;
-  background-color: cyan;
-  border: black 5px dashed;
 }
 
 .tabla__tamaño {
